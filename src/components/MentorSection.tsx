@@ -22,15 +22,15 @@ export default function MentorSection() {
             
             {/* Mentor Info Card */}
             <div className="bg-white/[0.03] backdrop-blur-sm border border-white/10 rounded-2xl p-6">
-              <div className="flex items-start justify-between gap-6">
-                {/* Left side - Mentor Info */}
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-6">
+                {/* Mentor Info */}
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-white mb-2" style={{fontFamily: 'Poppins, Inter, sans-serif'}}>Sarah Martinez</h3>
                   <p className="text-white/70">Co-founder of Web3 Career Academy</p>
                 </div>
                 
-                {/* Right side - Achievement */}
-                <div className="flex items-center gap-3 bg-gradient-to-r from-[#22d3ee]/10 to-[#10b981]/10 border border-[#22d3ee]/20 rounded-xl px-4 py-3">
+                {/* Achievement - moves to bottom on mobile */}
+                <div className="flex items-center gap-3 bg-gradient-to-r from-[#22d3ee]/10 to-[#10b981]/10 border border-[#22d3ee]/20 rounded-xl px-4 py-3 md:flex-shrink-0">
                   <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-[#22d3ee]/20 to-[#10b981]/20 border border-[#22d3ee]/30">
                     <Award className="h-5 w-5 text-[#22d3ee]" />
                   </div>
