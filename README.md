@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BrightBlox - Web3 Career Blueprint
+
+A modern Next.js application for the Web3 Career Blueprint landing page, converted from the original HTML version.
+
+## Features
+
+- **Next.js 15** with App Router
+- **TypeScript** for type safety
+- **Tailwind CSS** for styling
+- **Lucide React** for icons
+- **Responsive design** optimized for all devices
+- **Scroll animations** and parallax effects
+- **SEO optimized** with proper metadata
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Available Scripts
 
-## Learn More
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+├── app/
+│   ├── globals.css      # Global styles
+│   ├── layout.tsx       # Root layout
+│   └── page.tsx         # Home page
+└── components/
+    ├── Header.tsx
+    ├── Hero.tsx
+    ├── PainPoints.tsx
+    ├── SolutionOverview.tsx
+    ├── VideoSection.tsx
+    ├── LeadMagnet.tsx
+    ├── Testimonials.tsx
+    ├── CourseBreakdown.tsx
+    ├── Certification.tsx
+    ├── Pricing.tsx
+    ├── FAQ.tsx
+    ├── FinalCTA.tsx
+    ├── Footer.tsx
+    └── ScrollAnimations.tsx
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Key Features
 
-## Deploy on Vercel
+### Responsive Design
+- Mobile-first approach
+- Optimized for all screen sizes
+- Touch-friendly interactions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Performance
+- Next.js optimization
+- Image optimization
+- Code splitting
+- Fast loading times
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### SEO
+- Proper meta tags
+- Semantic HTML
+- Open Graph support
+- Structured data ready
+
+## Deployment
+
+The app can be deployed to any platform that supports Next.js:
+
+- **Vercel** (recommended)
+- **Netlify**
+- **AWS Amplify**
+- **Railway**
+
+For Vercel deployment:
+```bash
+npm run build
+```
+
+## Customization
+
+### Colors
+The color scheme can be customized in the Tailwind config or by updating the CSS custom properties.
+
+### Content
+All content is easily editable in the component files.
+
+### Styling
+Uses Tailwind CSS with custom utilities for the Web3 theme.
+
+## License
+
+Private project - All rights reserved.
