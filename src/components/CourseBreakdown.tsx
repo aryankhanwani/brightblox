@@ -1,6 +1,6 @@
 'use client'
 
-import { Map, Compass, Database, MessageSquare, Wallet, Sparkles, Check, Wand2, FileText, Presentation, ListChecks, MessageSquare as MessageSquareIcon, Contact, FileCheck, Mic, Quote, Scale, Shield, Handshake, Slack, Calendar, FileCheck as FileCheckIcon, Trophy, MousePointer, Clock, Users, Target, ArrowRight } from 'lucide-react'
+import { Map, Compass, Database, MessageSquare, Wallet, Sparkles, Check, FileText, Users, MousePointer } from 'lucide-react'
 
 export default function CourseBreakdown() {
   const modules = [
@@ -29,7 +29,7 @@ export default function CourseBreakdown() {
       duration: "3-4 hours",
       description: "Translate Web2 experience into Web3 credibility. Build a sharp value proposition and proof-of-work assets that speak a hiring manager's language.",
       outcomes: [
-        "Craft your 'Why Web3, Why Now' narrative",
+        "Craft your &apos;Why Web3, Why Now&apos; narrative",
         "Optimize resume + LinkedIn for crypto roles",
         "Build mini-portfolio with teardown or growth plan",
         "Develop personal brand positioning"
@@ -127,10 +127,9 @@ export default function CourseBreakdown() {
           </p>
         </div>
 
-        <div className="space-y-8">
-          {modules.map((module, index) => {
-            const IconComponent = module.icon
-            return (
+         <div className="space-y-8">
+           {modules.map((module, index) => {
+             return (
               <div 
                 key={module.id}
                 data-reveal 
@@ -166,7 +165,7 @@ export default function CourseBreakdown() {
                     <div className="grid md:grid-cols-2 gap-8">
                       {/* Description */}
                       <div>
-                        <h5 className="text-lg font-medium mb-4 text-white/90">What You'll Learn</h5>
+                        <h5 className="text-lg font-medium mb-4 text-white/90">What You&apos;ll Learn</h5>
                         <p className="text-white/70 leading-relaxed mb-6">
                           {module.description}
                         </p>
@@ -191,7 +190,7 @@ export default function CourseBreakdown() {
                       <div>
                         <h6 className="font-medium text-white/90 mb-4 flex items-center gap-2">
                           <FileText className="h-4 w-4 text-[#10b981]" />
-                          What You'll Get
+                          What You&apos;ll Get
                         </h6>
                         <div className="space-y-3">
                           {module.deliverables.map((deliverable, idx) => (
