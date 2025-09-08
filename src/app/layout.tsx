@@ -28,6 +28,7 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <meta property="og:image" content="https://brightblox.xyz/og-image.png" />
       </head>
       <body className={`${inter.variable} ${poppins.variable} antialiased`}>
         {children}
