@@ -15,10 +15,8 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-10">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="flex items-center gap-3">
-            <div className="flex h-8 w-8 items-center justify-center rounded-md bg-white/5 ring-1 ring-white/10">
-              <span className="text-xs font-semibold tracking-tight" style={{fontFamily: 'Poppins, Inter, sans-serif'}}>BB</span>
-            </div>
-            <div>
+            <img src="/brightblox.png" alt="Brightblox" className="h-8 sm:h-10 w-auto shrink-0" />
+            <div className="hidden sm:block">
               <p className="text-sm font-medium">Brightblox</p>
               <p className="text-xs text-white/60">Web3 Career Training</p>
             </div>

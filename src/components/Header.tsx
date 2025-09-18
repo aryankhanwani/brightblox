@@ -11,7 +11,7 @@ export default function Header() {
             <span className="text-xs font-semibold tracking-tight" style={{fontFamily: 'Poppins, Inter, sans-serif'}}>BB</span>
           </div> */}
           {/* <span className="text-sm font-medium text-white/80" style={{fontFamily: 'Poppins, Inter, sans-serif'}}>Brightblox</span>4 */}
-          <img src="brightblox.png" alt="Brightblox" className="h-10 w-full" />
+          <img src="/brightblox.png" alt="Brightblox" className="h-8 sm:h-10 w-auto shrink-0" />
         </div>
         <nav className="hidden items-center gap-6 md:flex py-4">
           <a href="#solution" className="text-sm text-white/70 hover:text-white transition-colors">Blueprint</a>
