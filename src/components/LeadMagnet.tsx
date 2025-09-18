@@ -1,6 +1,7 @@
 'use client'
 
 import { Check, ClipboardList } from 'lucide-react'
+import { PodiaButton } from './PodiaButton'
 
 export default function LeadMagnet() {
   return (
@@ -31,16 +32,25 @@ export default function LeadMagnet() {
             </div>
           </div>
 
-          <form className="mt-6 flex w-full flex-col gap-3 sm:flex-row">
+          <div className="mt-6 flex w-full flex-col gap-3 sm:flex-row">
             <div className="relative flex-1">
-              <input type="email" required placeholder="Your email address" className="w-full rounded-lg border border-white/15 bg-[#0f0f0f] px-4 py-3 text-sm placeholder-white/40 outline-none focus:border-white/30" />
+              <input 
+                type="email" 
+                required 
+                placeholder="Your email address" 
+                className="w-full rounded-lg border border-white/15 bg-[#0f0f0f] px-4 py-3 text-sm placeholder-white/40 outline-none focus:border-white/30" 
+                id="lead-magnet-email"
+              />
               <div className="pointer-events-none absolute inset-0 rounded-lg ring-1 ring-white/10"></div>
             </div>
-            <button type="submit" className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[#22d3ee] to-[#10b981] px-5 py-2.5 text-sm font-semibold tracking-tight text-[#0a0a0a] hover:opacity-95 active:opacity-90 ring-1 ring-white/10">
+            <PodiaButton 
+              variant="leadMagnet"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[#22d3ee] to-[#10b981] px-5 py-2.5 text-sm font-semibold tracking-tight text-[#0a0a0a] hover:opacity-95 active:opacity-90 ring-1 ring-white/10"
+            >
               <ClipboardList className="h-4 w-4 text-[#0a0a0a]" aria-hidden="true" />
               Get Free Checklist
-            </button>
-          </form>
+            </PodiaButton>
+          </div>
           <p className="mt-3 text-xs text-white/60">Join 1,200+ professionals who've downloaded this guide</p>
         </div>
       </div>

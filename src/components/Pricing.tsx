@@ -1,6 +1,7 @@
 'use client'
 
 import { BadgeCheck, Check, ShieldCheck } from 'lucide-react'
+import { PodiaButton } from './PodiaButton'
 
 export default function Pricing() {
   return (
@@ -66,7 +67,12 @@ export default function Pricing() {
               <li className="flex items-start gap-2"><Check className="mt-0.5 h-3 w-3 sm:h-4 sm:w-4 text-[#00d4ff] flex-shrink-0" /> <span className="leading-relaxed">Private community access</span></li>
             </ul>
             <div className="mt-4 sm:mt-6 space-y-2 sm:space-y-3">
-              <a href="#checkout" className="block w-full rounded-lg bg-gradient-to-r from-[#22d3ee] to-[#10b981] px-3 sm:px-4 py-2 sm:py-2.5 text-center text-xs sm:text-sm font-semibold tracking-tight text-[#0a0a0a] hover:opacity-95 ring-1 ring-white/10">Get The Blueprint</a>
+              <PodiaButton 
+                variant="course"
+                className="block w-full rounded-lg bg-gradient-to-r from-[#22d3ee] to-[#10b981] px-3 sm:px-4 py-2 sm:py-2.5 text-center text-xs sm:text-sm font-semibold tracking-tight text-[#0a0a0a] hover:opacity-95 ring-1 ring-white/10"
+              >
+                Get The Blueprint
+              </PodiaButton>
               <div className="flex items-center justify-center gap-2 text-xs text-white/60">
                 <ShieldCheck className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
                 <span className="text-center">30-day money-back guarantee</span>

@@ -1,6 +1,7 @@
 'use client'
 
 import { ShieldCheck, Rocket, Lock } from 'lucide-react'
+import { PodiaButton } from './PodiaButton'
 
 export default function Hero() {
   return (
@@ -18,10 +19,13 @@ export default function Hero() {
             The proven blueprint that helped 200+ non-technical professionals land high-paying Web3 roles in 90 days.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
-            <a href="#pricing" className="group inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[#22d3ee] to-[#10b981] px-4 py-2.5 text-sm font-semibold tracking-tight text-[#0a0a0a] hover:opacity-95 active:opacity-90 ring-1 ring-white/10">
+            <PodiaButton 
+              variant="course"
+              className="group inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[#22d3ee] to-[#10b981] px-4 py-2.5 text-sm font-semibold tracking-tight text-[#0a0a0a] hover:opacity-95 active:opacity-90 ring-1 ring-white/10"
+            >
               <Rocket className="h-5 w-5 text-[#0a0a0a]" aria-hidden="true" />
               Get The Blueprint Now
-            </a>
+            </PodiaButton>
           </div>
           <div className="flex items-center gap-4">
             <div className="flex -space-x-2">

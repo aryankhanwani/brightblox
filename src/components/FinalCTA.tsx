@@ -1,6 +1,7 @@
 'use client'
 
 import { ShieldCheck, Rocket, ArrowRight } from 'lucide-react'
+import { PodiaButton } from './PodiaButton'
 
 export default function FinalCTA() {
   return (
@@ -21,14 +22,14 @@ export default function FinalCTA() {
           {/* Clean CTA Section */}
           <div className="text-center mb-8">
             {/* CTA Button */}
-            <a 
-              href="#checkout" 
+            <PodiaButton 
+              variant="course"
               className="group inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-[#22d3ee] to-[#10b981] px-8 py-3 text-base font-semibold tracking-tight text-[#0a0a0a] hover:opacity-95 transition-all duration-200"
             >
               <Rocket className="h-4 w-4 text-[#0a0a0a]" aria-hidden="true" />
               Get The Blueprint Now
               <ArrowRight className="h-4 w-4 text-[#0a0a0a] group-hover:translate-x-1 transition-transform" />
-            </a>
+            </PodiaButton>
           </div>
 
           {/* Minimal Stats */}
