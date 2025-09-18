@@ -21,8 +21,8 @@ export const podiaConfig: PodiaConfig = {
 export const redirectToCourseCheckout = () => {
   if (typeof window !== 'undefined' && podiaConfig.checkoutUrl) {
     // Track the conversion attempt
-    if (typeof gtag !== 'undefined') {
-      gtag('event', 'begin_checkout', {
+    if (typeof window.gtag !== 'undefined') {
+      window.gtag('event', 'begin_checkout', {
         currency: 'USD',
         value: 500,
         items: [{
@@ -45,8 +45,8 @@ export const redirectToCourseCheckout = () => {
 export const redirectToLeadMagnet = () => {
   if (typeof window !== 'undefined' && podiaConfig.leadMagnetUrl) {
     // Track lead magnet conversion
-    if (typeof gtag !== 'undefined') {
-      gtag('event', 'generate_lead', {
+    if (typeof window.gtag !== 'undefined') {
+      window.gtag('event', 'generate_lead', {
         currency: 'USD',
         value: 0,
         items: [{
@@ -70,9 +70,3 @@ export const validatePodiaConfig = (): boolean => {
   return !!(podiaConfig.checkoutUrl && podiaConfig.leadMagnetUrl);
 };
 
-// Type declaration for gtag (Google Analytics)
-declare global {
-  interface Window {
-    gtag: (...args: any[]) => void;
-  }
-}
